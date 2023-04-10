@@ -1,0 +1,304 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+}
+/* .rechercheParNom{
+    margin-top: 5%;
+    width: 450px;
+    height: 110px;
+    padding: 20px;
+    text-align: center;
+} */
+/* #mnt2{
+    width: 350px;
+    height: 40px;
+    margin-top: 10px;
+} */
+.dflex{
+    display: flex;
+}
+
+.dflex.jcc{
+    justify-content: center;
+}
+
+.dflex.jcsb{
+    justify-content: space-between;
+}
+
+.dflex.aic{
+    align-items: center;
+}
+
+.dflex.fdc{
+    flex-direction: column;
+}
+
+.flex1{
+    flex: 1;
+}
+
+.flex2{
+    flex: 2;
+}
+
+
+/* ------------------------ */
+.card{
+    height: 50vh;
+    width: 40%;
+    background-color: #27566B;
+    padding: 10px;
+    color: #E5E8E9;
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+.photo{
+    border-left: 2px solid #E5E8E9;
+    padding-left: 10px;
+}
+
+.infos{
+    height: 40%;
+}
+
+.info{
+    padding-right: 10px;
+}
+
+.row .label{
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.row .data{
+    font-size: 1.5rem;
+}
+
+.title{
+    font-size: 1.5rem;
+}
+
+.btn-detail{
+    font-weight: 900;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+.form{
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    left: 100%;
+    background-color: #27566B;
+    /* background-color: #06293D;27566B */
+}
+
+.form-group{
+    margin-bottom: 10px;
+}
+
+.from-control{
+    width: 200px;
+    padding: 10px;
+    text-align: center;
+}
+
+.form-group label{
+    font-size: 1.20rem;
+}
+
+input.from-control{
+    font-size: 1.5rem;
+    border-radius: 5px;
+    border: #799eb0;
+    outline: none;
+}
+
+select{
+    outline: none;
+    border-radius: 5px;
+}
+
+.form button{
+    width: 100%;
+    background-color: #06293D;
+    color: #E5E8E9;
+    outline: none;
+    border: 1px solid #799eb0;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.next{
+    padding: 5px 20px;
+    font-size: 1.09rem;
+    margin-top: 10px;
+    background-color: #27566B;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    color: #E5E8E9;
+}
+.addUser{
+    padding: 5px 20px;
+    font-size: 1.09rem;
+    margin-top: 10px;
+    background-color: #27566B;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    color: #E5E8E9;
+}
+
+button{
+    cursor: pointer;
+}
+
+table{
+    width: 100%;
+    background-color: #799eb0;
+}
+tr,td{
+    text-align: center;
+    line-height: 30px;
+}
+.form{
+    display: none;
+}
+.form.hide{
+    display: none;
+}
+
+.modal{
+    width: 40%;
+    height: 300px;
+    background-color: rgb(5, 4, 4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    position: absolute;
+    left: 0;
+    display: none;
+}
+.contenue-modal{
+    background-color: rgb(155, 162, 162);
+    color: white;
+    width: 80%;
+    height: 80%;
+    align-items: center;
+    justify-content: center;
+}
+.nomModal{
+    display: flex;
+    justify-content: space-between;
+}
+.prenomModal{
+    display: flex;
+    justify-content: space-between;
+}
+.telephoneModal{
+    display: flex;
+    justify-content: space-between;
+}
+.EmailModal{
+    display: flex;
+    justify-content: space-between;
+}
+.soldeModal{
+    display: flex;
+    justify-content: space-between;
+}
+.modalbuttons{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    gap: 10px;
+}
+.suggestion{
+    font-size: 22px;
+}
+.suggestion:hover{
+    background-color: white;
+    color: black;
+}
+.suggest{
+    font-size: 22px;
+}
+.suggest:hover{
+    background-color: rgb(34, 206, 222);
+    color: black;
+}
+.input-nom{
+    border-radius: 10px;
+    width: 300px;
+    height: 32px;
+    margin: 5px;
+}
+.input-prenom{
+    border-radius: 10px;
+    width: 300px;
+    margin: 5px;
+    height: 32px;
+}
+#monSoldemodal{
+    border-radius: 10px;
+    width: 300px;
+    margin: 5px;
+    height: 32px;
+}
+.modalEmail{
+    border-radius: 10px;
+    width: 300px;
+    margin: 5px;
+    height: 32px;
+}
+#telephonemodal{
+    border-radius: 10px;
+    width: 300px;
+    margin: 5px;
+    height: 32px;
+}
+.messErreur{
+    background-color: aqua;
+    width: 370px;
+    height: 40px;
+    position: absolute;
+    top:5px;
+    display: none;
+}
+.ok{
+    width: 35px;
+    height: 30px;
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+}
+.searchByName{
+    position: absolute;
+    top: 40px;
+}
+.boutonAnnuler{
+    width: 75px;
+    height: 30px;
+    background-color: #ece035;
+}
